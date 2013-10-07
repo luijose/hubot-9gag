@@ -1,0 +1,41 @@
+{
+  "name": "hubot-9gag",
+  "version": "0.2",
+  "description": "A Hubot script that returns a random 9gag meme image",
+  "author": "EnriqueVidal, luijose",
+  "license": "MIT",
+
+  "keywords": [
+    "hubot",
+    "9gag"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luijose/hubot-9gag.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/luijose/hubot-9gag/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "htmlparser": "1.7.6",
+    "soupselect": "0.2.0",
+    "jsdom": "0.8.6"
+  },
+
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "script/test"
+  }
+}
