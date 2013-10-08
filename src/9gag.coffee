@@ -27,11 +27,16 @@ send_meme = (msg, location)->
       parser.parseComplete body
 
       img_title = Select(handler.dom, ".badge-item-title")[0].children[0].raw
-      img_src = Select(handler.dom, ".badge-item-img")[0].attribs.src
-
       d = jsdom.jsdom().createElement("div")
       d.innerHTML = img_title
       img_title = d.childNodes[0].nodeValue
+
+      img_src = Select(handler.dom, ".badge-item-animated-img")[0]
+
+      if not img_src
+        img_src = Select(handler.dom, ".badge-item-img")[0]
+
+      img_src = img_src.attribs.src
 
       if img_src.substr(0, 4) != "http"
         img_src = "http:#{img_src}"
