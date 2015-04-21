@@ -1,3 +1,22 @@
+# Description:
+#   Hubot random 9gag image poster
+#
+# Dependencies:
+#   "soupselect"
+#   "htmlparser"
+#   "jsdom"
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   hubot 9gag
+#   hubot 9gag me
+#   hubot 9gag jdoe
+#
+# Author:
+#   luijose / EnriqueVidal
+
 Select      = require( "soupselect" ).select
 htmlparser  = require "htmlparser"
 jsdom       = require "jsdom"
