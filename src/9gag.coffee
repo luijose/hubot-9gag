@@ -50,14 +50,12 @@ send_meme = (msg, location)->
       d.innerHTML = img_title
       img_title = d.childNodes[0].nodeValue
 
-      img_src = Select(handler.dom, ".badge-item-animated-img")[0]
+      img_src = Select(handler.dom, ".badge-animated-container-animated")[0]
 
       if not img_src
         img_src = Select(handler.dom, ".badge-item-img")[0]
-
-      img_src = img_src.attribs.src
-
-      if img_src.substr(0, 4) != "http"
-        img_src = "http:#{img_src}"
+        img_src = img_src.attribs.src
+      else
+        img_src = img_src.attribs['data-image']
 
       msg.send img_title, img_src
