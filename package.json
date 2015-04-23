@@ -1,6 +1,6 @@
 {
   "name": "hubot-9gag",
-  "version": "0.2",
+  "version": "0.3",
   "description": "A Hubot script that returns a random 9gag meme image",
   "author": "EnriqueVidal, luijose",
   "license": "MIT",
